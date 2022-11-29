@@ -37,7 +37,7 @@ export default function Home() {
       <Head>
         <title>ELI5 | Explain like i&apos;m 5</title>
         <meta name="description" content="Explain anything in simple words, like you're 5" />
-        <meta name="og:url" content="https://assetsai.art" />
+        <meta name="og:url" content="https://eli5.devkrishna.in/" />
         <meta name="og:type" content="website" />
         <meta name="og:title" content="ELI5 | Explain like i'm 5" />
         <meta name="og:description" content="Explain anything in simple words, like you're 5" />
@@ -47,8 +47,8 @@ export default function Home() {
         <meta name="og:image:height" content="436" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:domain" content="assetsai.art" />
-        <meta name="twitter:url" content="https://assetsai.art" />
+        <meta name="twitter:domain" content="https://eli5.devkrishna.in/" />
+        <meta name="twitter:url" content="https://eli5.devkrishna.in/" />
         <meta name="twitter:title" content="ELI5 | Explain like i'm 5" />
         <meta name="twitter:description" content="Explain anything in simple words, like you're 5" />
         <meta name="twitter:image" content="https://ik.imagekit.io/colorContrast/eli5.png" />
