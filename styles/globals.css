@@ -1,9 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Inter "sans-serif";
 }
 
 a {
@@ -15,7 +18,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +26,39 @@ a {
     color: white;
     background: black;
   }
+} */
+
+.childish {
+  font-family: "Short Stack", cursive;
+}
+
+.bounded-wave-loader {
+  /* position: fixed; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* overflow: hidden; */
+  /* border: 2px solid transparent; */
+  /* border-radius: 8px; */
+  /* width: 100px; */
+  /* height: 100px; */
+  /* box-shadow: 0 0 0 4px #000; */
+}
+
+.bounded-wave-loader svg {
+  /* position: absolute; */
+  /* bottom: 0; */
+  animation: shift 1s linear infinite;
+}
+
+@keyframes shift {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.bgImage {
+  background-image: url("/assets/bgImage1.webp");
+  background-size: cover;
+  background-position: right;
 }
