@@ -32,7 +32,7 @@ export default function Home() {
       const data = await response.json();
       const { output } = JSON.parse(data);
 
-      setExplanation(`${output.text}`);
+      setExplanation(output);
       setIsGenerating(false);
     }
   };
