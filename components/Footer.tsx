@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="text-gray-900 text-center">
         <p>
           Made by{" "}
-          <Link href="https://twitter.com/AllDevThings" target="_blank" rel="noopener noreferrer" className="underline">
+          <Link href="https://www.devkrishna.in" target="_blank" rel="noopener noreferrer" className="underline">
             DevKrishna
           </Link>
         </p>

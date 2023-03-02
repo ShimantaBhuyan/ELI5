@@ -25,11 +25,16 @@ export default function Home() {
       body: JSON.stringify({ searchValue: promptSearch }),
     });
 
-    const data = await response.json();
-    const { output } = data;
+    if (!response.ok) {
+      setIsGenerating(false);
+      alert("Something went wrong. Please try again.");
+    } else {
+      const data = await response.json();
+      const { output } = JSON.parse(data);
 
-    setExplanation(`${output.text}`);
-    setIsGenerating(false);
+      setExplanation(`${output.text}`);
+      setIsGenerating(false);
+    }
   };
 
   return (
@@ -104,7 +109,7 @@ export default function Home() {
         </div>
 
         {explanation != undefined && explanation.length > 0 && !isGenerating ? (
-          <div>
+          <div className="w-[100%]">
             <p className="block mb-2 text-md font-medium text-gray-900">Explanation</p>
             <h2 className="w-full mb-6 border border-dashed border-4 rounded-lg px-4 py-8 text-md">{explanation}</h2>
           </div>
